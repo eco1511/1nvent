@@ -1,6 +1,6 @@
 :root {
   --primary: #ffd700;
-  --second: #20B2AA;
+  --second: #20b2aa;
   --bg: #fff;
 }
 
@@ -56,14 +56,14 @@ body {
   margin: 0 1rem;
 }
 .navbar .navbar-nav a:hover {
-  color: var(--primary);
+  color: #20b2aa;
 }
 
 .navbar .navbar-nav a::after {
   content: "";
   display: block;
   padding-bottom: 0.5rem;
-  border-bottom: 0.1rem solid var(--primary);
+  border-bottom: 0.1rem solid #20b2aa;
   transform: scaleX(0);
   transition: 0.2s linear;
 }
@@ -78,7 +78,7 @@ body {
 }
 
 .navbar .navbar-extra a:hover {
-  color: var(--primary);
+  color: #20b2aa;
 }
 
 #hamburger-menu {
@@ -256,6 +256,61 @@ body {
   mask-image: linear-gradient(rgba(0, 0, 0, 1) 85%, rgba(0, 0, 0, 0));
 }
 
+.fade-in-text {
+  font-family: Arial;
+  font-size: 150px;
+  animation: fadeIn 5s;
+  -webkit-animation: fadeIn 5s;
+  -moz-animation: fadeIn 5s;
+  -o-animation: fadeIn 5s;
+  -ms-animation: fadeIn 5s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 /* .hero::after {
   content: " ";
   display: block;
@@ -383,12 +438,37 @@ body {
   line-height: 1.6;
 }
 
+/* Program kerja */
+
+#program {
+  background-color: var(--second);
+  -webkit-mask-image: linear-gradient(rgba(0, 0, 0, 1) 70%, rgba(0, 0, 0, 0));
+  mask-image: linear-gradient(rgba(0, 0, 0, 1) 85%, rgba(0, 0, 0, 0));
+}
+
+#program .a li {
+  list-style: square;
+  font-size: 1.2rem;
+}
+
+.a li {
+  padding: 0.5rem;
+}
+
+.about .row .program-img img {
+  width: 100%;
+  mask-image: url(../img/menu/coffee-bean.svg);
+  mask-size: 80%;
+  mask-repeat: no-repeat;
+  mask-position: center;
+}
+
 /* Menu Section */
 
 .menu h2,
 .contact h2,
 .products h2 {
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 .menu p,
@@ -397,7 +477,7 @@ body {
   text-align: center;
   max-width: 30rem;
   margin: auto;
-  font-weight: 100;
+  font-weight: 300;
   line-height: 1.6;
 }
 
@@ -411,11 +491,14 @@ body {
 .menu .row .menu-card {
   text-align: center;
   padding-bottom: 4rem;
+  padding: 1.2rem 6rem;
 }
 
 .menu .row .menu-card img {
   border-radius: 50%;
-  width: 80%;
+  width: 150px;
+  height: 150px;
+  background-color: var(--primary);
 }
 
 .menu .row .menu-card .menu-card-title {
@@ -528,7 +611,7 @@ body {
   padding: 2rem;
   font-size: 1.7rem;
   background: none;
-  color: #fff;
+  color: #101010;
 }
 
 .contact .row form .btn {
@@ -536,7 +619,7 @@ body {
   display: inline-block;
   padding: 1rem 3rem;
   font-size: 1.7rem;
-  color: #fff;
+  color: #101010;
   background-color: var(--primary);
   cursor: pointer;
   border-radius: 5px;
@@ -555,13 +638,13 @@ footer .social {
 }
 
 footer .social a {
-  color: #fff;
+  color: #101010;
   margin: 1rem;
 }
 
 footer .social a:hover,
 footer .links a:hover {
-  color: var(--bg);
+  color: #666;
 }
 
 footer .links {
@@ -569,7 +652,7 @@ footer .links {
 }
 
 footer .links a {
-  color: #fff;
+  color: #101010;
   padding: 0.7rem 1rem;
 }
 
@@ -578,7 +661,7 @@ footer .credit {
 }
 
 footer .credit a {
-  color: var(--bg);
+  color: #101010;
   font-weight: 700;
 }
 
@@ -689,7 +772,7 @@ footer .credit a {
   }
 
   .navbar .navbar-nav a {
-    color: var(--primary);
+    color: #101010;
     display: block;
     margin: 1.5rem;
     padding: 0.5rem;
