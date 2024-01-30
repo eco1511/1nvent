@@ -56,7 +56,7 @@ body {
   margin: 0 1rem;
 }
 .navbar .navbar-nav a:hover {
-  color: #20b2aa;
+  color: #ffd700;
 }
 
 .navbar .navbar-nav a::after {
@@ -78,11 +78,18 @@ body {
 }
 
 .navbar .navbar-extra a:hover {
-  color: #20b2aa;
+  color: #ffd700;
 }
 
 #hamburger-menu {
   display: none;
+}
+
+.navbar .navbar-nav .active-button {
+  background-color: #20b2aa;
+  padding: 0 8px;
+  padding-top: 4px;
+  border-radius: 10px;
 }
 
 /* Navbar search form */
